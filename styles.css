@@ -142,7 +142,7 @@ nav ul li a:hover {
 
 /* Product Styling */
 
-.product {
+.row {
     /* display: grid; */
     display: flex;
     flex-wrap: wrap;
@@ -152,8 +152,7 @@ nav ul li a:hover {
 }
 
 .product-cover {
-    flex: 500px;
-    flex-shrink: 2;
+    flex: 1 300px;
     background-color: #343a40;
     height: 500px;
     box-sizing: border-box;
@@ -186,26 +185,26 @@ nav ul li a:hover {
     margin-top: 50px;
 }
 
-.product-cover:nth-child(2),
-.product-cover:nth-child(3),
-.product-cover:nth-child(5),
-.product-cover:nth-child(6),
-.product-cover:nth-child(7),
-.product-cover:nth-child(8) {
+.row:nth-child(1) .product-cover:nth-child(2),
+.row:nth-child(2) .product-cover:nth-child(1),
+.row:nth-child(3) .product-cover:nth-child(1),
+.row:nth-child(3) .product-cover:nth-child(2),
+.row:nth-child(4) .product-cover:nth-child(1),
+.row:nth-child(4) .product-cover:nth-child(2) {
     background-color: #f8f9fa;
     color: #111;
 }
 
-.product-cover:nth-child(4) {
+.row:nth-child(2) .product-cover:nth-child(2) {
     background-color: #007bff;
     color: white;
 }
 
-.product-cover:nth-child(4) .blank-box {
+.row:nth-child(2) .product-cover:nth-child(2) .blank-box {
     color: #f8f9fa;
 }
 
-.product-cover:nth-child(2) .blank-box {
+.row:nth-child(1) .product-cover:nth-child(2) .blank-box {
     background-color: #343a40;
 }
 
